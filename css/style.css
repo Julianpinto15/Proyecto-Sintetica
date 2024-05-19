@@ -1,0 +1,316 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1rem sea = 10px*/
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: monospace;
+  font-size: 1.3rem;
+}
+
+a {
+  display: inline-block;
+}
+
+header {
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background-color: #e8eaed;
+  width: 100%;
+}
+
+.logo {
+  height: 10rem;
+  padding: 1.8rem;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e8eaed;
+  margin: 0 auto;
+  height: 6.5rem;
+}
+
+header .container .logo {
+  width: 10rem;
+  margin: 0 auto;
+}
+
+header .container nav a {
+  align-items: center;
+  color: #000;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.8rem;
+  margin: 8px 15px;
+}
+
+.boton-rojo {
+  color: #fff;
+  background-color: transparent;
+  border: 0.3rem solid green;
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.3rem;
+}
+
+.boton-rojo:hover {
+  background-color: green;
+}
+
+.boton-blanco {
+  color: red;
+  background-color: white;
+  border: 3px solid red;
+  text-decoration: none;
+  padding: 0.5rem;
+  text-transform: capitalize;
+  font-weight: bold;
+  font-size: 1.6rem;
+}
+
+.seccion {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.cuadrado-perfecto {
+  width: 100%;
+}
+
+.container {
+  width: 1140px;
+  margin: 0 auto 0 auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.columna {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.columna-33 {
+  width: 33.33%;
+}
+
+#inicio {
+  position: relative;
+}
+
+#inicio img {
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+
+#inicio .bloque-inicio {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  width: 400px;
+  text-align: center;
+  margin-left: -200px;
+}
+
+#inicio .bloque-inicio h1 {
+  color: white;
+  font-size: 35px;
+}
+
+#inicio .bloque-inicio p {
+  color: white;
+  font-size: 16px;
+}
+
+/* #nosotros {
+  background-image: url(/img/fondoFutbol.jpg);
+  background-size: cover;
+} */
+
+#nosotros p {
+  color: #000;
+  text-align: center;
+  font-size: 16px;
+  margin: 0;
+  padding: 5rem 8rem;
+}
+
+.bloque-servicio {
+  border: 2px solid black;
+}
+
+.bloque-img-servicio img {
+  width: 100%;
+  height: 20rem;
+}
+
+.bloque-img-servicio img {
+  width: 100%;
+  height: 20rem;
+}
+
+.bloque-contenido-servicio {
+  padding: 1.5rem;
+}
+
+h3 {
+  margin-top: 0;
+  font-size: 25px;
+  text-align: center;
+}
+
+/*slider*/
+
+.slider-frame {
+  width: 90%;
+  margin: 5rem auto 0;
+  overflow: hidden;
+}
+
+.slider-frame ul {
+  display: flex;
+  padding: 0;
+  width: 600%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+  width: 16.666%;
+  list-style: none;
+  position: relative;
+}
+
+.slider-frame img {
+  width: 100%;
+  height: 40rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0;
+  }
+  20% {
+    margin-left: 0;
+  }
+  25% {
+    margin-left: -100%;
+  }
+  45% {
+    margin-left: -100%;
+  }
+  50% {
+    margin-left: -200%;
+  }
+  70% {
+    margin-left: -200%;
+  }
+  75% {
+    margin-left: -300%;
+  }
+  95% {
+    margin-left: -300%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+.mensaje-entrada {
+  text-transform: capitalize;
+}
+
+.mapa-position {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.mapa {
+  box-shadow: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+}
+
+.titulo-ubicacion {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.parrafo-ubicacion {
+  margin: 0 2rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.negrilla1 {
+  color: green;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0;
+  background-color: #e8eaed;
+}
+
+.footer .copyright {
+  font-size: 14px;
+  color: #000000;
+}
+
+.texto-ubication {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"] {
+  padding: 5px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+button {
+  padding: 5px 10px;
+}
+
+.footer p {
+  line-height: 0.6rem;
+}
